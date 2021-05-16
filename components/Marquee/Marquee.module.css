@@ -1,0 +1,23 @@
+.root {
+  @apply w-full relative my-10;
+  height: 320px;
+  min-width: 100%;
+  overflow-y: hidden;
+}
+
+.container {
+  @apply flex flex-row items-center;
+}
+
+.container > * {
+  @apply relative flex-1 px-16 py-4 h-full;
+  min-height: 320px;
+}
+
+.primary {
+  @apply bg-primary;
+}
+
+.secondary {
+  @apply bg-secondary;
+}

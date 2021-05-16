@@ -1,0 +1,32 @@
+.root {
+  @apply relative box-border overflow-hidden;
+}
+
+.divCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.divTopLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bg {
+  @apply bg-black inline-block text-white p-3 text-xl break-words transition ease-linear;
+}
+
+.root .imgContainer .img {
+  @apply transition-transform ease-linear cursor-pointer overflow-hidden;
+}
+
+.root:hover .imgContainer .img {
+  transform: scale(1.15);
+}
+
+.root:hover .divTopLeft .bg {
+  @apply bg-accent;
+}

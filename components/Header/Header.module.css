@@ -1,0 +1,35 @@
+.root {
+  overflow: hidden;
+  @apply relative text-center pb-10;
+}
+
+.root:hover .card {
+  opacity: 0.1;
+}
+
+.imgWrapper {
+  @apply transform scale-100;
+}
+
+.root:hover .imgWrapper {
+  @apply transform scale-125;
+}
+
+.divHover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.root:hover .divHover {
+  opacity: 1;
+}
+
+.root,
+.card,
+.divHover,
+.imgWrapper {
+  transition: all 0.5s ease;
+}

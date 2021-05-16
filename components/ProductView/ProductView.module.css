@@ -1,0 +1,28 @@
+.root {
+  @apply flex flex-col md:flex-row overflow-hidden;
+  /* max-height: calc(100vh - 64px); */
+}
+
+.productDisplay,
+.sidebar {
+  @apply w-full md:w-1/2 relative;
+}
+
+.divTopLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @apply max-w-full z-10 py-5 px-2 md:py-10 md:px-5;
+}
+
+.bg {
+  @apply bg-accent text-white break-words transition ease-linear text-xl p-2 md:p-3 md:text-2xl;
+}
+
+.sidebar {
+  @apply flex flex-col justify-center p-3 md:p-14;
+}
+
+.img img {
+  @apply object-cover !important;
+}

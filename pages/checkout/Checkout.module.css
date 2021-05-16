@@ -1,0 +1,41 @@
+.input {
+  @apply bg-primary text-primary p-2 outline-none rounded-lg mb-5;
+}
+
+.left {
+  max-height: 79vh;
+  @apply bg-accent p-3 md:p-10 w-full md:w-2/4 2xl:w-2/3 rounded-xl relative;
+}
+
+.left.loading::after {
+  background-size: 50px;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-text-primary-transparent);
+}
+
+.left.loading::before {
+  z-index: 32;
+  background: url('/ouroboros.svg') no-repeat center center;
+  background-size: 50px;
+  animation: rotate 2s linear infinite;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

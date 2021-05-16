@@ -1,0 +1,53 @@
+.span {
+  @apply w-12 h-12 inline-block mr-2 rounded-full border border-gray-500 flex justify-center items-center;
+}
+
+.input[type='radio'] + label span {
+  transition: background 0.2s, transform 0.2s;
+}
+
+.input[type='radio'] + label span:hover,
+.input[type='radio'] + label:hover span {
+  transform: scale(1.1);
+}
+
+.input[type='radio']:checked + label span {
+  @apply bg-accent;
+  box-shadow: 0px 0px 0px 2px var(--color-text-primary) inset;
+}
+
+.input[type='radio'] + label span.brown {
+  background-color: brown;
+}
+
+.brown {
+  background-color: brown !important;
+}
+
+.white {
+  background-color: white !important;
+}
+
+.black {
+  background-color: black !important;
+}
+
+.red {
+  background-color: red !important;
+}
+
+.gray {
+  background-color: gray !important;
+}
+
+.blue {
+  background-color: blue !important;
+}
+
+.green {
+  background-color: green !important;
+}
+
+.yellow {
+  background-color: yellow !important;
+}

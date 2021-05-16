@@ -1,0 +1,26 @@
+.root {
+  /* height: calc(100vh - 64px); */
+}
+
+.leftControl {
+  left: 10px;
+}
+
+.rightControl {
+  right: 10px;
+}
+
+.control {
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-25px);
+  width: 50px;
+  height: 50px;
+  @apply absolute outline-none focus:outline-none cursor-pointer;
+
+  @screen md {
+    transform: translateY(-40px);
+    width: 80px;
+    height: 80px;
+  }
+}
