@@ -119,17 +119,25 @@ export default function CartNav({ isOpen, close }) {
                   {cart.line_items.map((item, i) => (
                     <div key={i} className="flex space-x-4 py-4">
                       <div className="h-16 w-16 relative">
-                        <Image
-                          src={item.media.source}
-                          width={150}
-                          height={150}
-                          unoptimized
-                        />
+                        <Link href={`/product/${item.permalink}`}>
+                          <a onClick={close}>
+                            <Image
+                              src={item.media.source}
+                              width={150}
+                              height={150}
+                              unoptimized
+                            />
+                          </a>
+                        </Link>
                       </div>
 
                       <div className="flex flex-col flex-1 justify-between">
-                        <h1 className="font-bold">{item.name}</h1>
-                        <h1 className="font-bold">{item.quantity}</h1>
+                        <Link href={`/product/${item.permalink}`}>
+                          <a onClick={close}>
+                            <h1 className="font-bold">{item.name}</h1>
+                            <h1 className="font-bold">{item.quantity}</h1>
+                          </a>
+                        </Link>
                       </div>
 
                       <div className="flex flex-col justify-between items-end">

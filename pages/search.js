@@ -87,13 +87,13 @@ export default function search({ initialData, categories }) {
 
       <aside className="w-full md:w-3/12 lg:w-2/12 p-3 md:p-10 flex flex-col text-primary">
         <h1 className="font-bold mb-8 text-lg">Relevância</h1>
-        <Link href="/search/male">
+        <Link href="/search?category=masculino">
           <a className="mb-4 text-secondary">Tendência</a>
         </Link>
-        <Link href="/search/male">
+        <Link href="/search?category=masculino">
           <a className="mb-4 text-secondary">Do mais caro ao mais barato</a>
         </Link>
-        <Link href="/search/male">
+        <Link href="/search?category=masculino">
           <a className="mb-4 text-secondary">Do mais barato ao mais caro</a>
         </Link>
       </aside>

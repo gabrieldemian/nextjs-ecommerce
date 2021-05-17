@@ -6,7 +6,7 @@ export default function CardPayment({ number, expires, owner, cvv }) {
       <div className="flex flex-row h-full">
         <div className="flex flex-col justify-between h-full w-2/3">
           <div className="w-full">
-            <Image width={40} height={40} src="/cardchip2.png" />
+            <Image priority width={40} height={40} src="/cardchip2.png" />
           </div>
 
           <span className="text-xl w-full">
@@ -36,7 +36,7 @@ export default function CardPayment({ number, expires, owner, cvv }) {
         </div>
 
         <div className="w-1/3 flex align-top justify-end">
-          <Image src="/mastercard.svg" width={50} height={50} layout="fixed" />
+          <Image priority src="/mastercard.svg" width={50} height={50} layout="fixed" />
         </div>
       </div>
     </div>
