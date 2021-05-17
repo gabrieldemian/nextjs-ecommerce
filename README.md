@@ -17,6 +17,8 @@ yarn dev
 
 Recomendo criar uma conta no CommerceJS: https://commercejs.com e pegar sua chave da API e colocar nas variávis de ambiente
 
+**Se você não fizer isso, a aplicação não vai carregar nenhum item, e vai ficar vazio e feio**
+
 Crie um arquivo ".env" na raiz do projeto e coloque a seguinte chave com o valor da sua conta:
 
 ```bash
