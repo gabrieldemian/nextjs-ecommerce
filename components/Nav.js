@@ -12,7 +12,8 @@ import { useTheme } from 'next-themes'
 import Image from 'next/image'
 
 export default function Nav() {
-  const { theme, setTheme } = useTheme('dark')
+
+  const { resolvedTheme, setTheme } = useTheme('dark')
   const [isOpen, setOpen] = useState(false)
   const [cartOpen, setCartOpen] = useState(false)
   const containerRef = useRef()
@@ -80,8 +81,8 @@ export default function Nav() {
             <Image
               layout="fixed"
               className="cursor-pointer"
-              onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-              src={`/${theme === 'light' ? 'sun' : 'moon'}.svg`}
+              onClick={() => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')}
+              src={`/${resolvedTheme === 'light' ? 'sun' : 'moon'}.svg`}
               width={33}
               height={33}
             />
