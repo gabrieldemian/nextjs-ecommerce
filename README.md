@@ -3,7 +3,7 @@ Projeto de e-commerce com carrinho de compras, listagem de itens, pesquisa, cate
 ## ⚡ Stack
 - NextJS
 - Tailwindcss
-- CommerceJS
+- CommerceJS (CMS)
 - Framer Motion (animações)
 
 ## ⚡ Instalação
