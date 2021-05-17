@@ -30,13 +30,14 @@ export default function thanks() {
           Esperamos que goste dos produtos
         </p>
         <p className="text-xl text-primary">
-          Agora é só aguardar a transportadora entregar os pedidos na sua casa, ou comprar mais um pouco
+          Agora é só aguardar a transportadora entregar os pedidos na sua casa,
+          ou comprar mais um pouco
         </p>
-        <Button className="mt-5">
-          <Link href="/search">
-            <a>Quero comprar mais!</a>
-          </Link>
-        </Button>
+        <Link href="/search">
+          <a>
+            <Button className="mt-5">Quero comprar mais!</Button>
+          </a>
+        </Link>
       </div>
     </div>
   )
