@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Projeto de e-commerce com carrinho de compras, listagem de itens, pesquisa, categorias, compra com cartão, validação de campos, tema escuro, etc.
 
-## Getting Started
+## ⚡ Stack
+- NextJS
+- Tailwindcss
+- CommerceJS
+- Framer Motion (animações)
 
-First, run the development server:
-
+## ⚡ Instalação
 ```bash
-npm run dev
-# or
+yarn
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Recomendo criar uma conta no CommerceJS: https://commercejs.com e pegar sua chave da API e colocar nas variávis de ambiente
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Crie um arquivo ".env" na raiz do projeto e coloque a seguinte chave com o valor da sua conta:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+NEXT_PUBLIC_CHEC_PUBLIC_KEY=YOURKEY
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Tela inicial](https://res.cloudinary.com/gabrielcloud/image/upload/v1621215088/gabriel-portfolio/portfolio/555_skmcwq.png)
+![Listagem](https://res.cloudinary.com/gabrielcloud/image/upload/v1621215046/gabriel-portfolio/portfolio/sdsad_lvbndu.png)
+![Checkout](https://res.cloudinary.com/gabrielcloud/image/upload/v1621215044/gabriel-portfolio/portfolio/1321_wxl8pg.png)
+![Compra](https://res.cloudinary.com/gabrielcloud/image/upload/v1621215044/gabriel-portfolio/portfolio/9999_hskjuz.png)
