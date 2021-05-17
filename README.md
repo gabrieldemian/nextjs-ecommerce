@@ -6,6 +6,9 @@ Projeto de e-commerce com carrinho de compras, listagem de itens, pesquisa, cate
 - CommerceJS (CMS)
 - Framer Motion (animações)
 
+## 🖥️ Link em produção
+https://nextjs-ecommerce-peach.vercel.app/
+
 ## ⚡ Instalação
 ```bash
 yarn
