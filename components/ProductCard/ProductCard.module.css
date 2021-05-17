@@ -1,4 +1,5 @@
 .root {
+  height: fit-content;
   @apply relative box-border overflow-hidden;
 }
 

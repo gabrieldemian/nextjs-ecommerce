@@ -20,7 +20,7 @@ export default function index() {
 
   const cardRegexp =
     /^((4\d{3})|(5[1-5]\d{2})|(6011)|(34\d{1})|(37\d{1}))-?\s?\d{4}-?\s?\d{4}-?\s?\d{4}|3[4,7][\d\s-]{15}$/
-  const expiresRegexp = /^((0[1-9])|(1[0-2]))\/(\d{2})$/
+  const expiresRegexp = /^((0[1-9])|(1[0-2]))\/(\d{4})$/
 
   const schema = yup.object().shape({
     number: yup.string().matches(cardRegexp, 'Cartão inválido'),
@@ -110,7 +110,7 @@ export default function index() {
                         <Svg
                           onClick={() => emptyCart(item.id)}
                           icon="trash"
-                          className="h-6 w-6 cursor-pointer"
+                          className="h-6 w-6 cursor-pointer text-white"
                         />
                       </div>
                     </motion.div>
@@ -156,8 +156,8 @@ export default function index() {
                 placeholder="Validade"
                 {...register('expires')}
                 className="w-1/2"
-                format="##/##"
-                mask={['M', 'M', 'Y', 'Y']}
+                format="##/####"
+                mask={['M', 'M', 'Y', 'Y', 'Y', 'Y']}
                 error={errors.expires}
               />
               <Input

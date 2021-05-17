@@ -23,7 +23,7 @@ export default function Header() {
             className="w-full md:w-1/2 justify-center flex flex-col"
           >
             <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl mb-16 text-primary mt-8">
-              D-Ecommerce
+              E-commerce
             </h1>
             <p className="text-2xl lg:text-3xl mb-8 text-primary">
               Somos uma loja virtual moderna com tudo o que você precisa.

@@ -23,12 +23,6 @@ module.exports = {
       3: 3,
       '4:': 4,
     },
-    // screens: {
-    //   sm: { min: "640px", max: "767px" },
-    //   md: { min: "768px", max: "1023px" },
-    //   lg: { min: "1024px", max: "1279px" },
-    //   xl: { min: "1280px", },
-    // },
     extend: {
       maxWidth: {
         '8xl': '1920px',
@@ -75,9 +69,6 @@ module.exports = {
   },
   variants: {
     extend: {},
-  },
-  corePlugins: {
-    // container: false
   },
   plugins: [
     function ({ addComponents }) {

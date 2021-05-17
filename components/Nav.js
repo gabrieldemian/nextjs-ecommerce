@@ -8,8 +8,11 @@ import { MenuToggle } from './MenuToggle'
 import { Navigation } from './Navigation'
 import Search from './Search'
 import Svg from './Svg'
+import { useTheme } from 'next-themes'
+import Image from 'next/image'
 
 export default function Nav() {
+  const { theme, setTheme } = useTheme('dark')
   const [isOpen, setOpen] = useState(false)
   const [cartOpen, setCartOpen] = useState(false)
   const containerRef = useRef()
@@ -19,7 +22,7 @@ export default function Nav() {
 
   const sidebar = {
     open: (height = 1000) => ({
-      clipPath: `circle(${height * 2 + 200}px at 82vw 32px)`,
+      clipPath: `circle(${height * 2 + 200}px at 86vw 32px)`,
       transition: {
         type: 'spring',
         stiffness: 20,
@@ -27,7 +30,7 @@ export default function Nav() {
       },
     }),
     closed: {
-      clipPath: `circle(0px at 80vw 32px)`,
+      clipPath: `circle(0px at 86vw 32px)`,
       transition: {
         delay: 0.5,
         type: 'spring',
@@ -69,14 +72,23 @@ export default function Nav() {
             <Search />
           </div>
 
-          <div className="flex items-center justify-center flex-1 space-x-8">
+          <div className="flex items-center justify-center flex-2 space-x-4">
             <motion.div className="full-nav" variants={sidebar}>
               <Navigation items={itemsMenu} setOpen={() => setOpen(false)} />
             </motion.div>
 
+            <Image
+              layout="fixed"
+              className="cursor-pointer"
+              onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+              src={`/${theme === 'light' ? 'sun' : 'moon'}.svg`}
+              width={33}
+              height={33}
+            />
+
             <div className="relative" onClick={() => setCartOpen(true)}>
               {quantity > 0 && (
-                <span className="absolute -right-7 -top-3 bg-accent text-white rounded-full flex justify-center items-center p-2 cursor-pointer">
+                <span className="absolute text-xs -right-3 -top-3 bg-accent text-white rounded-full flex justify-center items-center p-2 cursor-pointer">
                   <p style={{ lineHeight: '0.7' }}>{quantity}</p>
                 </span>
               )}

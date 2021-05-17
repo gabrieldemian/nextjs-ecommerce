@@ -25,10 +25,6 @@
   @apply mt-3 font-bold;
 }
 
-.button {
-  @apply w-full bg-accent text-white p-3 mt-8 font-bold rounded-md shadow-md;
-}
-
 .aside.loading::after {
   background-size: 50px;
   content: '';

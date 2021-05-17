@@ -12,6 +12,7 @@ import cn from 'classnames'
 import Image from 'next/image'
 import { useCart } from '@/contexts/cart-context'
 import Link from 'next/link'
+import Button from '../Button'
 
 export default function CartNav({ isOpen, close }) {
   const ref = useRef({})
@@ -36,23 +37,27 @@ export default function CartNav({ isOpen, close }) {
       clipPath: `circle(${height * 2 + 200}px at 80vw 32px)`,
       transition: {
         x: {
-          transition: 0.1,
+          transition: 0,
         },
+        delay: 0,
         type: 'spring',
         stiffness: 20,
         restDelta: 2,
       },
     }),
     closed: {
-      x: {
-        transition: 0.1,
-      },
       x: ref.current.clientWidth,
       clipPath: `circle(0px at 80vw 32px)`,
       transition: {
+        x: {
+          transition: 0,
+          type: 'spring',
+          stiffness: 20,
+          restDelta: 2,
+        },
         type: 'spring',
-        stiffness: 400,
-        damping: 40,
+        stiffness: 20,
+        restDelta: 2,
       },
     },
   }
@@ -144,10 +149,6 @@ export default function CartNav({ isOpen, close }) {
                     <span>Subtotal</span>
                     <span>{cart.subtotal.formatted_with_symbol}</span>
                   </li>
-                  <li className={`${s.li} ${s.border}`}>
-                    <span>Frete</span>
-                    <span>Cálculo no checkout</span>
-                  </li>
                   <li className={`${s.li} ${s.total}`}>
                     <span>Total</span>
                     <span>{cart.subtotal.formatted_with_symbol}</span>
@@ -155,7 +156,7 @@ export default function CartNav({ isOpen, close }) {
 
                   <Link href="/checkout">
                     <a onClick={close}>
-                      <button className={s.button}>Checkout</button>
+                      <Button>Checkout</Button>
                     </a>
                   </Link>
                 </ul>

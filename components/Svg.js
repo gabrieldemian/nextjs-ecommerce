@@ -93,7 +93,7 @@ export default function Svg({ icon, className, onClick }) {
         class={className}
         fill="none"
         viewBox="0 0 24 24"
-        stroke="var(--color-text-primary)"
+        stroke="currentColor"
       >
         <path
           stroke-linecap="round"

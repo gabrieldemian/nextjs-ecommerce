@@ -61,10 +61,7 @@ export default function search({ initialData, categories }) {
         ))}
       </aside>
 
-      <main
-        className="w-full md:w-6/12 lg:w-8/12 p-3 md:p-10 flex flex-col md:flex-row flex-wrap justify-start"
-        style={{ minHeight: 'calc(100vh - 124px)' }}
-      >
+      <main className="w-full md:w-6/12 lg:w-8/12 p-3 md:p-10 flex flex-col md:flex-row flex-wrap justify-start">
         {loading ? <Loading /> : ''}
         {data?.map((product, i) => (
           <ProductCard

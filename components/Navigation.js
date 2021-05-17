@@ -40,7 +40,7 @@ export const Navigation = ({ items, setOpen }) => (
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
           onClick={setOpen}
-          className="text-secondary cursor-pointer text-xl font-semibold pb-8 w-full text-center transition duration-200 ease-linear hover:text-accent"
+          className="text-secondary cursor-pointer text-xl font-semibold mb-8 w-full text-center transition duration-200 ease-linear hover:text-accent"
         >
           {item.name}
         </motion.a>

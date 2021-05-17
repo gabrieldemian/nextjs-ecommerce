@@ -12,7 +12,7 @@ export default function Search() {
     <div className="w-full">
       <input
         type="text"
-        className="w-full bg-secondary p-2 rounded-sm outline-none text-secondary"
+        className="w-full bg-secondary p-2 rounded-sm outline-none text-accent font-bold"
         placeholder="Pesquisar..."
         onKeyUp={(e) => {
           e.preventDefault()

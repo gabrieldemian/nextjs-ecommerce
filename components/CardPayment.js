@@ -17,7 +17,7 @@ export default function CardPayment({ number, expires, owner, cvv }) {
             <div className="flex flex-col">
               <p className="text-white font-light text-xs">Validade</p>
               <span className="text-md w-full">
-                {expires ? expires : 'MM/YY'}
+                {expires ? expires : 'MM/YYYY'}
               </span>
             </div>
 
