@@ -3,9 +3,7 @@ import commerce from '@/lib/commerce'
 
 export default function Permalink({ product, variants }) {
   return (
-    <div>
-      <ProductView product={product} variants={variants} />
-    </div>
+    <ProductView product={product} variants={variants} />
   )
 }
 

@@ -15,7 +15,7 @@ export default function thanks() {
       className="container flex justify-center items-center"
       style={{ minHeight: '85vh' }}
     >
-      <div className="mt-10 bg-secondary p-10 text-center w-full md:w-1/3 rounded-lg relative">
+      <div className="mt-10 bg-secondary p-10 text-center w-full md:w-2/3 xl:w-1/2 2xl:w-1/3 rounded-lg relative">
         <Reward
           type="confetti"
           ref={(ref) => {

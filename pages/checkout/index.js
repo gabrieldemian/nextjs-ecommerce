@@ -46,7 +46,7 @@ export default function index() {
 
   return (
     <div className="container mt-10">
-      <div className="flex flex-row flex-wrap shadow-lg rounded-xl text-white">
+      <div className="flex flex-row flex-wrap rounded-xl text-white">
         <div className={cn(s.left, { [s.loading]: loading })}>
           {cart?.total_items < 1 ? (
             <div className="flex flex-col justify-center h-full">
@@ -67,8 +67,8 @@ export default function index() {
             </div>
           ) : (
             <>
-              <div className="flex flex-col justify-between h-full">
-                <div className="overflow-y-auto">
+              <div className="flex flex-col justify-between">
+                <div className="overflow-y-auto" style={{maxHeight: '79vh'}}>
                   <h1 className="font-bold mb-8 text-xl md:text-4xl">Itens</h1>
                   {cart?.line_items.map((item, i) => (
                     <motion.div
@@ -94,17 +94,17 @@ export default function index() {
 
                       <div className="flex flex-col flex-1 justify-between">
                         <Link href={`/product/${item.permalink}`}>
-                          <a className="font-bold text-sm md:text-2xl">
+                          <a className="font-bold text-sm md:text-lg 2xl:text-2xl">
                             {item.name}
                           </a>
                         </Link>
-                        <h1 className="font-bold text-sm md:text-2xl">
+                        <h1 className="font-bold text-sm md:text-lg 2xl:text-2xl">
                           {item.quantity}
                         </h1>
                       </div>
 
                       <div className="flex flex-col justify-between items-end">
-                        <p className="text-sm md:text-2xl">
+                        <p className="text-sm md:text-lg 2xl:text-2xl">
                           {item.price.formatted_with_symbol}
                         </p>
                         <Svg
@@ -118,7 +118,7 @@ export default function index() {
                 </div>
 
                 <ul className="pt-5">
-                  <li className="flex justify-between pb-3 text-sm md:text-2xl text-white">
+                  <li className="flex justify-between pb-3 text-white text-sm md:text-lg 2xl:text-2xl">
                     <span>Total</span>
                     <span className="font-bold">
                       {cart?.subtotal.formatted_with_symbol}
@@ -130,7 +130,7 @@ export default function index() {
           )}
         </div>
 
-        <div className="bg-secondary md:p-10 w-full md:w-2/4 2xl:w-1/3 rounded-xl">
+        <div className="bg-secondary md:p-10 w-full md:w-1/2 2xl:w-1/3 rounded-xl shadow-lg">
           <h1 className="font-bold mt-8 p-3 text-xl md:text-4xl text-primary md:mt-0 md:p-0 md:mb-8">
             Pagamento
           </h1>

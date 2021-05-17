@@ -17,7 +17,8 @@
 }
 
 .bg {
-  @apply bg-black inline-block text-white p-3 text-xl break-words transition ease-linear;
+  font-size: 90%;
+  @apply bg-black inline-block text-white p-3 break-words transition ease-linear relative;
 }
 
 .root .imgContainer .img {

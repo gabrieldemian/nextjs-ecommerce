@@ -3,8 +3,13 @@
 }
 
 .left {
+  /* max-height: 79vh; */
+  @apply shadow-lg bg-accent p-3 md:p-10 w-full md:w-1/2 2xl:w-2/3 rounded-xl relative;
+}
+
+.overflow {
   max-height: 79vh;
-  @apply bg-accent p-3 md:p-10 w-full md:w-2/4 2xl:w-2/3 rounded-xl relative;
+  @apply flex flex-col justify-center overflow-y-auto;
 }
 
 .left.loading::after {

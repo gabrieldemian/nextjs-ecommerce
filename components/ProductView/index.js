@@ -20,7 +20,7 @@ export default function ProductView({ product, variants }) {
   }
 
   return (
-    <div>
+    <>
       <NextSeo
         title={product.name}
         description={product.description}
@@ -98,6 +98,6 @@ export default function ProductView({ product, variants }) {
           </form>
         </div>
       </div>
-    </div>
+    </>
   )
 }

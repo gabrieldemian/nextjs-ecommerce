@@ -1,6 +1,5 @@
 .root {
-  @apply flex flex-col md:flex-row overflow-hidden;
-  /* max-height: calc(100vh - 64px); */
+  @apply flex flex-col md:flex-row overflow-hidden mt-10;
 }
 
 .productDisplay,
