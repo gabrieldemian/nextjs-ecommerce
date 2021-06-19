@@ -39,6 +39,7 @@ export default function Header() {
           >
             <div className="flex flex-col justify-center h-full w-full">
               <Image
+                priority
                 alt="Illustration of a woman browsing an ecommerce website"
                 draggable={false}
                 src="/header.svg"
