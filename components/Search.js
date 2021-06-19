@@ -1,5 +1,4 @@
-import { useRouter } from 'next/router'
-import { useEffect, useMemo } from 'react'
+import { useRouter, useEffect, useMemo } from '~/libraries'
 
 export default function Search() {
   const router = useRouter()

@@ -1,13 +1,9 @@
 import s from './ProductView.module.css'
-import { NextSeo } from 'next-seo'
-import cn from 'classnames'
-import Image from 'next/image'
-import ProductSlider from '@/components/ProductSlider'
 import parse from 'html-react-parser'
-import Swatch from '../Swatch'
 import { useForm } from 'react-hook-form'
 import { useCart } from '@/contexts/cart-context'
-import Button from '../Button'
+import { Button, Swatch, ProductSlider } from '~/components'
+import { Image, cn, NextSeo } from '~/libraries'
 
 export default function ProductView({ product, variants }) {
   const { register, handleSubmit } = useForm()

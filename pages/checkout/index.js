@@ -1,17 +1,10 @@
-import CardPayment from '@/components/CardPayment'
-import Input from '@/components/Input'
+import s from './Checkout.module.css'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
-import s from './Checkout.module.css'
 import * as yup from 'yup'
-import cn from 'classnames'
 import { useCart } from '@/contexts/cart-context'
-import Image from 'next/image'
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import Svg from '@/components/Svg'
-import Button from '@/components/Button'
-import { useRouter } from 'next/router'
+import { Button, Svg, Input, CardPayment } from '~/components'
+import { useRouter, Link, motion, Image, cn } from '~/libraries'
 
 export default function index() {
 

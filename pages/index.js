@@ -1,7 +1,8 @@
+// import { dynamic } from '~/libraries'
+import dynamic from 'next/dynamic'
 import commerce from '@/lib/commerce'
-import Header from '@/components/Header'
-import Marquee from '@/components/Marquee'
-import ProductCard from '@/components/ProductCard'
+import { Header, ProductCard } from '~/components'
+const Marquee = dynamic(() => import('../components/Marquee'), { loading: <p>Loading...</p> })
 
 export default function Home({ data }) {
   return (

@@ -13,6 +13,7 @@
     "isolatedModules": true,
     "module": "esnext",
     "paths": {
+      "~/*": ["./*"],
       "@/components/*": ["components/*"],
       "@/contexts/*": ["contexts/*"],
       "@/helpers/*": ["helpers/*"],

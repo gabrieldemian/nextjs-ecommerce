@@ -1,5 +1,5 @@
 import commerce from '@/lib/commerce'
-import React, { useEffect, useState, createContext, useContext } from 'react'
+import { useEffect, useState, createContext, useContext } from 'react'
 
 const CartContext = createContext({})
 

@@ -28,7 +28,7 @@ const itemsVariants = {
   },
 }
 
-export const Navigation = ({ items, setOpen }) => (
+const Navigation = ({ items, setOpen }) => (
   <motion.div
     className="flex items-center justify-center flex-col w-screen h-screen"
     variants={variants}
@@ -49,3 +49,5 @@ export const Navigation = ({ items, setOpen }) => (
     <MenuToggle toggle={setOpen} />
   </motion.div>
 )
+
+export default Navigation

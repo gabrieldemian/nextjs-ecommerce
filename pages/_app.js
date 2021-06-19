@@ -1,14 +1,8 @@
 import '../styles/globals.css'
-import 'nprogress/nprogress.css' //styles of nprogress
-import Nav from '@/components/Nav'
-import { DefaultSeo } from 'next-seo'
-import { ThemeProvider } from 'next-themes'
-import { useRouter } from 'next/router'
-import NProgress from 'nprogress' //nprogress module
-import { useEffect } from 'react'
+import 'nprogress/nprogress.css'
 import CartProvider from '@/contexts/cart-context'
-import Footer from '@/components/Footer'
-import { motion } from 'framer-motion'
+import { motion, useEffect, NProgress, useRouter, ThemeProvider, DefaultSeo } from '~/libraries'
+import { Footer, Nav } from '~/components'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter()

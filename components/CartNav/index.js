@@ -1,18 +1,12 @@
 import s from './CartNav.module.css'
-import Portal from '@reach/portal'
 import {
   disableBodyScroll,
   enableBodyScroll,
   clearAllBodyScrollLocks,
 } from 'body-scroll-lock'
-import { useEffect, useRef } from 'react'
-import Svg from '../Svg'
-import { motion } from 'framer-motion'
-import cn from 'classnames'
-import Image from 'next/image'
 import { useCart } from '@/contexts/cart-context'
-import Link from 'next/link'
-import Button from '../Button'
+import { Button, Svg } from '~/components'
+import { Link, Image, cn, motion, useEffect, useRef, Portal } from '~/libraries'
 
 export default function CartNav({ isOpen, close }) {
   const ref = useRef({})

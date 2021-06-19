@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion'
-import NumberFormat from 'react-number-format'
+import { motion, NumberFormat } from '~/libraries'
 
 export default function Input({
   type = 'text',

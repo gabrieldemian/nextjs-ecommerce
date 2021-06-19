@@ -1,7 +1,5 @@
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-import Link from 'next/link'
-import Button from '../Button'
+import { Button } from '~/components'
+import { Link, Image, motion } from '~/libraries'
 import s from './Header.module.css'
 
 export default function Header() {
@@ -41,6 +39,7 @@ export default function Header() {
           >
             <div className="flex flex-col justify-center h-full w-full">
               <Image
+                alt="Illustration of a woman browsing an ecommerce website"
                 draggable={false}
                 priority
                 src="/header.svg"
@@ -59,7 +58,12 @@ export default function Header() {
                 Sessão Masculina
               </h1>
               <div className={s.imgWrapper}>
-                <Image src="/man.svg" width={300} height={300} />
+                <Image
+                  draggable={false}
+                  src="/man.svg"
+                  width={300}
+                  height={300}
+                />
               </div>
             </div>
 
@@ -78,7 +82,12 @@ export default function Header() {
                 Sessão Feminina
               </h1>
               <div className={s.imgWrapper}>
-                <Image src="/woman.svg" width={300} height={300} />
+                <Image
+                  draggable={false}
+                  src="/woman.svg"
+                  width={300}
+                  height={300}
+                />
               </div>
             </div>
 
@@ -97,7 +106,12 @@ export default function Header() {
                 Acessórios
               </h1>
               <div className={s.imgWrapper}>
-                <Image src="/man.svg" width={300} height={300} />
+                <Image
+                  draggable={false}
+                  src="/man.svg"
+                  width={300}
+                  height={300}
+                />
               </div>
             </div>
 

@@ -1,6 +1,5 @@
 import s from './Button.module.css'
-import cn from 'classnames'
-import { motion } from 'framer-motion'
+import { motion, cn } from '~/libraries'
 
 export default function Button({
   children,

@@ -1,15 +1,9 @@
 import { useCart } from '@/contexts/cart-context'
 import { useDimensions } from '@/hooks/use-dimensions'
-import { motion } from 'framer-motion'
-import Link from 'next/link'
-import { useRef, useState } from 'react'
-import CartNav from '@/components/CartNav'
-import { MenuToggle } from './MenuToggle'
-import { Navigation } from './Navigation'
-import Search from './Search'
-import Svg from './Svg'
-import { useTheme } from 'next-themes'
-import Image from 'next/image'
+import { Svg, Search, MenuToggle } from '~/components'
+import { Image, useTheme, useRef, useState, Link, dynamic, motion } from '~/libraries'
+const CartNav = dynamic(() => import('~/components/CartNav'))
+const Navigation = dynamic(() => import('~/components/Navigation'))
 
 export default function Nav() {
 
@@ -51,6 +45,7 @@ export default function Nav() {
   return (
     <motion.nav
       className="bg-primary w-full shadow-md"
+      initial={false}
       animate={isOpen ? 'open' : 'closed'}
       custom={height}
       ref={containerRef}

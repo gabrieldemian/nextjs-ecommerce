@@ -1,12 +1,9 @@
-import Loading from '@/components/Loading'
-import ProductCard from '@/components/ProductCard'
+import { Loading, ProductCard } from '~/components'
+import { useEffect, useState, useRouter, Link, Image } from '~/libraries'
 import commerce from '@/lib/commerce'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
 
 export default function search({ initialData, categories }) {
+
   const router = useRouter()
   const { q, category } = router.query
   const [data, setData] = useState(initialData)

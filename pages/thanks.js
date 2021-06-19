@@ -1,7 +1,5 @@
 import Button from '@/components/Button'
-import Link from 'next/link'
-import { useEffect } from 'react'
-import Reward from 'react-rewards'
+import { Reward, useEffect, Link } from '~/libraries'
 
 export default function thanks() {
   let reward

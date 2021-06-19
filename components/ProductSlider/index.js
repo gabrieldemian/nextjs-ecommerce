@@ -1,9 +1,8 @@
 import 'keen-slider/keen-slider.min.css'
 import s from './ProductSlider.module.css'
-import cn from 'classnames'
 import { useKeenSlider } from 'keen-slider/react'
-import Image from 'next/image'
-import Svg from '@/components/Svg'
+import { Svg } from '~/components'
+import { Image, cn } from '~/libraries'
 
 export default function index({ children }) {
   const [sliderRef, slider] = useKeenSlider()

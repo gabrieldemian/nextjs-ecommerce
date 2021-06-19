@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Svg({ icon, className, onClick }) {
   const icons = {
     heart: (

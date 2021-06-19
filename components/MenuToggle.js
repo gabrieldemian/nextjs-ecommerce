@@ -3,8 +3,7 @@ import {
   disableBodyScroll,
   enableBodyScroll,
 } from 'body-scroll-lock'
-import { motion } from 'framer-motion'
-import { useEffect, useRef } from 'react'
+import { motion, useEffect, useRef } from '~/libraries'
 
 const Path = (props) => (
   <motion.path

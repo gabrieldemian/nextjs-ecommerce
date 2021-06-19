@@ -1,6 +1,5 @@
 import s from './Marquee.module.css'
-import Ticker from 'react-ticker'
-import cn from 'classnames'
+import { cn, Ticker } from '~/libraries'
 
 export default function Marquee({
   children,
