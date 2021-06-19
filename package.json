@@ -11,6 +11,7 @@
   "dependencies": {
     "@chec/cli": "^1.2.0",
     "@chec/commerce.js": "^2.4.1",
+    "@fontsource/poppins": "^4.4.5",
     "@hookform/resolvers": "^2.5.0",
     "@reach/portal": "^0.15.0",
     "@tailwindcss/forms": "^0.3.2",

@@ -1,7 +1,15 @@
+import '@fontsource/poppins'
 import '../styles/globals.css'
 import 'nprogress/nprogress.css'
 import CartProvider from '@/contexts/cart-context'
-import { motion, useEffect, NProgress, useRouter, ThemeProvider, DefaultSeo } from '~/libraries'
+import {
+  motion,
+  useEffect,
+  NProgress,
+  useRouter,
+  ThemeProvider,
+  DefaultSeo,
+} from '~/libraries'
 import { Footer, Nav } from '~/components'
 
 function MyApp({ Component, pageProps }) {
@@ -43,11 +51,11 @@ function MyApp({ Component, pageProps }) {
           variants={{
             pageInitial: {
               opacity: 0,
-              transition: {duration: 0.6}
+              transition: { duration: 0.6 },
             },
             pageAnimate: {
               opacity: 1,
-              transition: {duration: 0.6}
+              transition: { duration: 0.6 },
             },
           }}
         >
