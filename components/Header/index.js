@@ -41,7 +41,6 @@ export default function Header() {
               <Image
                 alt="Illustration of a woman browsing an ecommerce website"
                 draggable={false}
-                priority
                 src="/header.svg"
                 width={500}
                 height={500}
