@@ -65,6 +65,7 @@ export default function CartNav({ isOpen, close }) {
         drag={'x'}
         dragElastic={0.1}
         variants={sidebar}
+        initial={false}
         animate={isOpen ? 'open' : 'closed'}
         className={cn(s.aside, { [s.loading]: loading })}
         dragMomentum={false}
