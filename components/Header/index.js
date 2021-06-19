@@ -59,6 +59,7 @@ export default function Header() {
               </h1>
               <div className={s.imgWrapper}>
                 <Image
+                  alt="Sessão masculina"
                   draggable={false}
                   src="/man.svg"
                   width={300}
@@ -83,6 +84,7 @@ export default function Header() {
               </h1>
               <div className={s.imgWrapper}>
                 <Image
+                  alt="Sessão feminina"
                   draggable={false}
                   src="/woman.svg"
                   width={300}
@@ -107,6 +109,7 @@ export default function Header() {
               </h1>
               <div className={s.imgWrapper}>
                 <Image
+                  alt="Acessórios"
                   draggable={false}
                   src="/man.svg"
                   width={300}

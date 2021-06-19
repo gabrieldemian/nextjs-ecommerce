@@ -32,6 +32,7 @@ export const MenuToggle = ({ toggle, isOpen }) => {
 
   return (
     <button
+      name="Open menu"
       ref={ref}
       onClick={toggle}
       className="outline-none focus:outline-none"

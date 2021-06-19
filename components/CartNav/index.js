@@ -89,6 +89,7 @@ export default function CartNav({ isOpen, close }) {
         {cart?.total_items < 1 ? (
           <div className="flex flex-col justify-center h-full">
             <Image
+              alt="empty cart illustration"
               draggable={false}
               src="/empty.svg"
               width={100}
@@ -116,6 +117,7 @@ export default function CartNav({ isOpen, close }) {
                         <Link href={`/product/${item.permalink}`}>
                           <a onClick={close}>
                             <Image
+                              alt={item.name}
                               src={item.media.source}
                               width={150}
                               height={150}

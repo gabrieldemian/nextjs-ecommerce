@@ -74,6 +74,7 @@ export default function Nav() {
             </motion.div>
 
             <Image
+              alt={resolvedTheme === 'light' ? 'change theme to dark' : 'change theme to light'}
               layout="fixed"
               className="cursor-pointer"
               onClick={() => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')}
