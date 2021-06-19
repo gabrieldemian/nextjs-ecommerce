@@ -1,8 +1,10 @@
-import { ProductView } from '~/components'
+import ProductView from '@/components/ProductView'
 import commerce from '@/lib/commerce'
 
 export default function Permalink({ product, variants }) {
-  return <ProductView product={product} variants={variants} />
+  return (
+    <ProductView product={product} variants={variants} />
+  )
 }
 
 export async function getStaticProps({ params }) {
