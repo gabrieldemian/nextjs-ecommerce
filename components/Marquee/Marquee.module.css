@@ -21,3 +21,7 @@
 .secondary {
   @apply bg-secondary;
 }
+
+.transparent {
+  @apply bg-transparent;
+}

@@ -1,48 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: Poppins, sans-serif;
-  transition: all 0.8s ease-in-out;
-  @apply bg-primary;
-  @apply font-body !important;
-}
-
-nav,
-input,
-svg {
-  transition: all 0.8s ease-in-out;
+  background: url(/bodysvg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  @apply bg-secondary font-body;
 }
 
 .full-nav {
   z-index: 999;
-  @apply bg-secondary;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   width: 100vw !important;
   height: 100vh !important;
+  @apply bg-secondary;
 }
 
 :root {
-  --color-bg-primary: #ffffff;
-  --color-bg-secondary: #f9fafb;
-  --color-bg-accent: #ff2662;
-  --color-text-primary: #2d3748;
-  --color-text-secondary: rgb(74, 85, 104);
-  --color-text-primary-transparent: rgb(255, 255, 255, 0.5);
-  --color-text-accent: rgb(255, 38, 98);
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-accent: #ff2662;
+
+  --text-primary: #2d3748;
+  --bg-secondary-transparent: rgba(249, 250, 251, 0.5);
+  --text-secondary: rgb(74, 85, 104);
+  --text-accent: rgb(255, 38, 98);
 }
 
 .dark {
-  --color-bg-primary: rgb(19, 20, 22);
-  --color-bg-secondary: #1c1c1c;
-  --color-bg-accent: rgb(255, 38, 98);
-  --color-text-primary: rgb(223, 223, 223);
-  --color-text-secondary: rgb(165, 165, 165);
-  --color-text-primary-transparent: rgb(19, 20, 22, 0.5);
-  --color-text-accent: #ff2662;
+  --bg-primary: #1b1b1b;
+  --bg-secondary: #131313;
+  --bg-accent: rgb(255, 38, 98);
+
+  --text-primary: #fff;
+  --bg-secondary-transparent: rgba(19, 19, 19, 0.5);
+  --text-secondary: rgb(206, 206, 206);
+  --text-accent: rgb(255, 38, 98);
 }
 
 @keyframes rotate {
@@ -58,20 +58,3 @@ svg {
   box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
-
-* {
-  box-sizing: border-box !important;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

@@ -27,12 +27,8 @@ export default function CartNav({ isOpen, close }) {
 
   const sidebar = {
     open: (height = 1000) => ({
-      x: 0,
       clipPath: `circle(${height * 2 + 200}px at 80vw 32px)`,
       transition: {
-        x: {
-          transition: 0,
-        },
         delay: 0,
         type: 'spring',
         stiffness: 20,
@@ -40,15 +36,8 @@ export default function CartNav({ isOpen, close }) {
       },
     }),
     closed: {
-      x: ref.current.clientWidth,
       clipPath: `circle(0px at 80vw 32px)`,
       transition: {
-        x: {
-          transition: 0,
-          type: 'spring',
-          stiffness: 20,
-          restDelta: 2,
-        },
         type: 'spring',
         stiffness: 20,
         restDelta: 2,
@@ -61,30 +50,13 @@ export default function CartNav({ isOpen, close }) {
       <div onClick={close} className={cn(s.disable, { hidden: !isOpen })} />
       <motion.aside
         ref={ref}
-        dragPropagation={false}
-        drag={'x'}
-        dragElastic={0.1}
         variants={sidebar}
         initial={false}
         animate={isOpen ? 'open' : 'closed'}
         className={cn(s.aside, { [s.loading]: loading })}
-        dragMomentum={false}
-        onDragEnd={(e, info) => {
-          const conditionToClose = (ref.current.clientWidth * 2) / 3
-          const screenWidth = window.window.innerWidth
-          const minus = screenWidth - info.point.x
-
-          if (minus < conditionToClose) {
-            close()
-          }
-        }}
-        dragConstraints={{
-          left: 0,
-          right: ref.current.clientWidth,
-        }}
       >
         <span onClick={close}>
-          <Svg icon="close" className="h-6 w-6 cursor-pointer" />
+          <Svg icon="close" className="h-5 w-5 cursor-pointer" />
         </span>
 
         {cart?.total_items < 1 ? (
@@ -142,7 +114,6 @@ export default function CartNav({ isOpen, close }) {
                         <Svg
                           onClick={() => emptyCart(item.id)}
                           icon="trash"
-                          className="h-6 w-6 cursor-pointer"
                         />
                       </div>
                     </div>

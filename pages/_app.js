@@ -1,6 +1,7 @@
 import '@fontsource/poppins'
 import '../styles/globals.css'
-import 'nprogress/nprogress.css'
+import '../styles/nprogress.css'
+import '../styles/typography.css'
 import CartProvider from '@/contexts/cart-context'
 import {
   motion,

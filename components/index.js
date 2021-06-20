@@ -15,6 +15,7 @@ import Nav from './Nav'
 import Navigation from './Navigation'
 import Search from './Search'
 import Svg from './Svg'
+import Glass from './Glass'
 
 export {
   Button,
@@ -34,4 +35,5 @@ export {
   Navigation,
   Search,
   Svg,
+  Glass
 }

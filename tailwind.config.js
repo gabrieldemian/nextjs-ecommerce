@@ -24,6 +24,9 @@ module.exports = {
       '4:': 4,
     },
     extend: {
+      blur: {
+        '4xl': '200px'
+      },
       maxWidth: {
         '8xl': '1920px',
       },
@@ -36,34 +39,25 @@ module.exports = {
         },
       },
       backgroundColor: {
-        primary: 'var(--color-bg-primary)',
-        secondary: 'var(--color-bg-secondary)',
-        accent: 'var(--color-bg-accent)',
+        primary: 'var(--bg-primary)',
+        secondary: 'var(--bg-secondary)',
+        accent: 'var(--bg-accent)',
       },
       textColor: {
-        accent: 'var(--color-text-accent)',
-        primary: 'var(--color-text-primary)',
-        secondary: 'var(--color-text-secondary)',
+        accent: 'var(--text-accent)',
+        primary: 'var(--text-primary)',
+        secondary: 'var(--text-secondary)',
       },
       colors: {
-        primary: 'var(--color-text-accent)',
-        secondary: 'var(--color-text-accent)',
-      },
-      boxShadow: {
-        'outline-normal': '0 0 0 2px var(--accents-2)',
-        magical:
-          'rgba(0, 0, 0, 0.02) 0px 30px 30px, rgba(0, 0, 0, 0.03) 0px 0px 8px, rgba(0, 0, 0, 0.05) 0px 1px 0px',
-      },
-      lineHeight: {
-        'extra-loose': '2.2',
-      },
-      scale: {
-        120: '1.2',
+        primary: 'var(--text-accent)',
+        secondary: 'var(--text-accent)',
       },
       borderColor: (theme) => ({
         ...theme('colors'),
-        primary: 'var(--color-text-accent)',
-        secondary: 'var(--color-text-accent)',
+        bgPrimary: 'var(--bg-primary)',
+        bgSecondary: 'var(--bg-secondary)',
+        textSecondary: 'var(--text-secondary)',
+        accent: 'var(--bg-accent)',
       }),
     },
   },

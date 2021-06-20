@@ -4,7 +4,7 @@ import { cn, Ticker } from '~/libraries'
 export default function Marquee({
   children,
   className = '',
-  variant = 'primary', //primary or secondary
+  variant = 'transparent', //primary | secondary | transparent
 }) {
   return (
     <div className={cn(s.root, s[variant], className)}>

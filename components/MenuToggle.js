@@ -38,9 +38,8 @@ export const MenuToggle = ({ toggle, isOpen }) => {
       className="outline-none focus:outline-none"
     >
       <svg
-        stroke="var(--color-text-primary)"
-        width="23"
-        height="23"
+        stroke="currentColor"
+        className="h-6 w-6"
         viewBox="0 0 23 23"
       >
         <Path

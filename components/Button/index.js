@@ -5,12 +5,15 @@ export default function Button({
   children,
   variant = 'contained',
   className,
+  size = 'md',
+  disabled = false,
   ...other
 }) {
   return (
     <motion.button
-      whileTap={{ borderBottom: 0 }}
-      className={cn(s.button, s[variant], className)}
+      disabled={disabled}
+      whileTap={{ boxShadow: 'none' }}
+      className={cn(s.button, s[variant], s[size], className)}
       {...other}
     >
       {children}

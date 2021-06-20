@@ -8,7 +8,7 @@ export default function Loading({ overlay = false }) {
       ) : (
         <div className="w-full flex justify-center items-center h-full">
           <div
-            className="md:mt-20 flex justify-center items-cente"
+            className="md:mt-20 flex justify-center items-center"
             style={{
               animation: 'rotate 2s linear infinite',
               width: 52,
